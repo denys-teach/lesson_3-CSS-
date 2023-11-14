@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+  <div class="wrapper"></div>
+  <div class="header">
+    <div class="container">
+      <div class="logo">
+        <a href="../index.html">Site</a>
+      </div>
+      <nav class="nav-header">
+        <ul class="nav-header-list">
+          <li class="nav-header-list-li">
+            <a href="../index.html">Головна</a>
+          </li>
+          <li class="nav-header-list-li">
+            <a href="../pages/articles.html">Статті</a>
+          </li>
+          <li class="nav-header-list-li">
+            <a href="../pages/catalog.html">Каталог</a>
+          </li>
+          <li class="nav-header-list-li">
+            <a href="../pages/contacts.html">Контакти</a>
+          </li>
+          <li class="nav-header-list-li">
+            <a href="../pages/gallery.html">Галерея</a>
+          </li>
+          <li class="nav-header-list-li">
+            <a href="../pages/page-nav.html">Навігація</a>
+          </li>
+          <li class="nav-header-list-li">
+            <a href="../pages/registration.html">Реєстрація</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="main">
+    <div>
+      <h1>Реєстрація</h1>
+      <form action="https://tests.fomenko.top/echo/index.php" method="get">
+
+        <fieldset class="form-fieldset">
+          <legend>Personal information</legend>
+
+          <div class="form-for-list">
+            <label for="Surname-and-name">
+              Прізвище ім'я
+            </label>
+            <input required name="Surname-and-name" type="text" id="Surname-and-name" placeholder="Прізвище ім'я">
+          </div>
+
+          <div class="form-for-list">
+            <label for="myself-photo">
+              Додати фотографію
+            </label>
+            <input type="file" name="myself-photo" id="myself-photo">
+          </div>
+
+          <div class="form-for-list">
+            <label for="email">
+              Адреса електронної пошти
+            </label>
+            <input required type="email" name="email" id="email" placeholder="email">
+          </div>
+
+          <div class="form-for-list">
+            <label for="password">
+              Пароль
+            </label>
+            <input required type="password" name="password" id="password" placeholder="Пароль">
+          </div>
+
+          <div class="form-for-list">
+            <label for="sait-address">
+              Адреса сайту
+            </label>
+            <input type="url" name="sait-address" id="sait-address" value="https://mysite.name">
+          </div>
+          <div class="form-for-list">
+            <label for="date-of-birth">
+              Вибрати дату народження
+            </label>
+            <input required type="date" name="date-of-birth" id="date-of-birth">
+          </div>
+        </fieldset>
+        <fieldset class="form-fieldset">
+          <legend>Виберіть стать</legend>
+          <div>
+            <input type="radio" name="sex" id="male" value="male">
+            <label for="male">
+              Чоловік
+            </label>
+          </div>
+          <div>
+            <input type="radio" name="sex" id="femail" value="female">
+            <label for="femail">
+              Жінка
+            </label>
+          </div>
+          <div>
+            <input checked type="radio" name="sex" id="unknown" value="unknown">
+            <label for="unknown">
+              -
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form-fieldset">
+          <legend>Кухня</legend>
+          <div class="form-for-list">
+            <label for="UKR">
+              Виберіть улюблену кухню:
+            </label>
+            <div>
+              <input checked type="radio" name="cuisine" id="UKR" value="UKR">
+              <label for="UKR">українська</label>
+            </div>
+            <div>
+              <input type="radio" name="cuisine" id="GEO" value="GEO">
+              <label for="GEO">грузинська</label>
+            </div>
+            <div>
+              <input type="radio" name="cuisine" id="JPN" value="JPN">
+              <label for="JPN">японська</label>
+            </div>
+          </div>
+
+          <div class="form-for-list">
+            <label for="about-yourself">
+              Про себе
+            </label>
+            <textarea name="about-yourself" id="about-yourself" cols="30" rows="10"
+              placeholder="Опишіть себе"></textarea>
+          </div>
+
+          <div>
+            <button type="submit"><b>Зареєструватися</b></button>
+            <button type="reset"><b>Очистити</b></button>
+          </div>
+        </fieldset>
+
+      </form>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container footer-inner">
+      <span class="copyright">&#169; Odnosum Denys</span>
+    </div>
+  </div>
+</body>
+
+</html>
