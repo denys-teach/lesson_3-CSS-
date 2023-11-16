@@ -22,6 +22,24 @@ html {
   background-position: 99% 15%, 50% 50%;
 }
 
+.main-head > .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 800px;
+  height: 100vh;
+}
+
+.main-head > .text > span {
+  font-size: 50px;
+  font-weight: 900;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .container {
   max-width: 1280px;
   margin: auto;
@@ -90,7 +108,6 @@ html {
   min-height: 100vh;
   background-color: #ea8270;
   background-image: url(../img/bg-second.jpg);
-  overflow-y: scroll;
 }
 
 h1 {
@@ -119,6 +136,7 @@ h1 {
 }
 
 .article-text {
+  padding: 20px;
   background-color: rgb(135, 183, 223);
 }
 
@@ -290,6 +308,15 @@ button {
   margin: 20px;
 }
 
+.textarea_reg {
+  border-radius: 10px;
+  padding: 10px;
+  min-height: 100px;
+  max-height: 300px;
+  max-width: 400px;
+  min-width: 400px;
+}
+
 /*gallery*/
 
 .main-gallery {
@@ -338,6 +365,21 @@ figcaption {
 
 /*nav*/
 
+.anchor {
+  padding-top: 10px;
+  position: relative;
+}
+
+.anchor > span {
+  position: absolute;
+  top: -100px;
+}
+
+.text-chapters > h2 {
+  text-align: center;
+  color: #ea8270;
+}
+
 .nav-settings-chapter {
   display: flex;
   justify-content: center;
@@ -381,6 +423,10 @@ figcaption {
   background-color: rgb(255, 94, 0);
 }
 
+.buttons {
+  text-align: center;
+}
+
 /*footer*/
 
 .footer {
@@ -394,6 +440,7 @@ figcaption {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 20px auto;
 }
 
 .copyright {
