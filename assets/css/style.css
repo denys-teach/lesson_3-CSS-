@@ -285,18 +285,16 @@ legend {
   margin-left: 20px;
 }
 
-.button {
-  margin: 0 auto;
-  padding: 10px;
-  text-align: center;
-  display: flex;
-}
-
 input[type="radio"],
 input[type="checkbox"] {
   width: 20px;
   height: 20px;
   margin: 5px 10px 0 50px;
+}
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+  border: 5px dashed red;
 }
 
 button {
@@ -310,11 +308,11 @@ button {
 
 .textarea_reg {
   border-radius: 10px;
-  padding: 10px;
-  min-height: 100px;
-  max-height: 300px;
-  max-width: 400px;
-  min-width: 400px;
+  padding: 10px 20px;
+  resize: vertical;
+  min-height: 75px;
+  max-height: 33vh;
+  width: 100%;
 }
 
 /*gallery*/
